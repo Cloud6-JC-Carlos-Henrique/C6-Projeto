@@ -12,6 +12,22 @@ pipeline {
                 sh 'jar cfe "$JAR_NAME".jar Calculator *.class'
             }
         }
+
+        stage ('SonarQube analysis') {
+            steps {
+                script {
+                    def scannerHome = tool 'sonarqube';
+                    withSonarQubeEnv ('sonarqubec6') {
+                        sh "${scannerHome}/bin/sonar-scanner \
+                        -D sonar.login=dff2aee92477026e5d15525736d876474060a670 \
+                        -D sonar.projectKey=C6-Projeto \
+                        -D sonar.java.binaries=/var/jenkins_home/workspace/C6-Projeto \
+                        -D sonar.java.source=11 \
+                        -D sonar.host.url=http://sonarqube:9000"
+                    }
+                }
+            }
+        }
         
         /*stage("Maven Build") {
             steps {
