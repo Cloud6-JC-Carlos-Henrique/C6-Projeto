@@ -13,13 +13,13 @@ pipeline {
             }
         }
         
-        stage("Maven Build") {
+        /*stage("Maven Build") {
             steps {
                 script {
                     sh "mvn package -DskipTests=true"
                 }
             }
-        }
+        }*/
 
         stage("Store Artifact on Nexus") {
             steps{
