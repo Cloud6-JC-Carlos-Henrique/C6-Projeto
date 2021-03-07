@@ -12,6 +12,14 @@ pipeline {
                 sh 'jar cfe "$JAR_NAME".jar Calculator *.class'
             }
         }
+        
+        stage("Maven Build") {
+            steps {
+                script {
+                    sh "mvn package -DskipTests=true"
+                }
+            }
+        }
 
         stage("Store Artifact on Nexus") {
             steps{
