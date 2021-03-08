@@ -3,6 +3,8 @@ pipeline {
     parameters {
         string(name: 'JAR_NAME', defaultValue:'calculadora', description:'Name of the .jar file')
         string(name: 'DOCKER_IMAGE_NAME', defaultValue:'java-calculator', description:'Name of the Image')
+        string(name: 'VERSION', defaultValue:'v1.0', description:'Version of the Image')
+        
     }
         
     stages{
