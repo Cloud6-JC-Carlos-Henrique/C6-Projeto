@@ -12,7 +12,7 @@ pipeline {
         stage("Build Jar"){
             steps{
                 sh 'javac *.java'
-                sh 'jar cfe "$JAR_NAME".jar Calculator *.class'
+                sh 'jar cfe "$JAR_NAME".jar calculadora *.class'
             }
         }
 
