@@ -1,7 +1,8 @@
 ### Grupo
 Carlos Andrade
+João Costa
 Henrique Martins
-Joao Costa
+
 
 ### Requisitos
 
@@ -9,8 +10,11 @@ Joao Costa
 - Jenkins
 - Nexus
 - SonarQube
-- Plugins de integracao do Nexus e SonarQube configurados no Jenkins.
-- Configuracao do Maven e Java JDK no Jenkins.
+- Plugins de integração do Nexus e SonarQube configurados no Jenkins.
+	- Nexus Artifact Uploader
+	- Nexus Platform
+	- SonarQube Scanner for Jenkins
+- Configuração do Maven e Java JDK no Jenkins.
 
 ### Como usar
 
