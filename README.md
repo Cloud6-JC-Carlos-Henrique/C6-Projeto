@@ -35,3 +35,5 @@ Henrique Martins
 - Fazer build do projeto com os parametros pretendidos.
 
 ###### No final devera ter um relatorio da analise do codigo no SonarQube, o ficheiro .jar do projeto no repositorio Docker e a imagem criada no repositorio Raw do Nexus.
+
+'##
