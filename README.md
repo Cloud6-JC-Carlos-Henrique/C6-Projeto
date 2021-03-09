@@ -15,7 +15,6 @@ Joao Costa
 ### Como usar
 
 - Fazer clone do repositorio para uma diretoria local.
-- Criar os repositorios necessarios no nexus.
 - Criar uma docker network e adicionar a essa rede os containers Jenkins, Nexus e SonarQube.
 - Criar repositorio Raw e Docker no Nexus.
 - Adicionar o projeto no SonarQube e gerar o respetivo token de acesso.
